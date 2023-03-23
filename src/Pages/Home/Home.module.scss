@@ -1,0 +1,80 @@
+$darkModeBack: #1e1e1e;
+$darkModeText: #ffffff;
+
+$lightModeBack: #ffffff;
+$lightModeText: #000000;
+
+$transitionTime: 0.4s;
+
+.body {
+    background-color: $lightModeBack;
+    color: $lightModeText;
+    border-color: $lightModeText;
+
+    height: 100vh;
+    width: 100vw;
+
+    transition: background-color $transitionTime ease;
+}
+
+.body_dark {
+    background-color: $darkModeBack;
+    color: $darkModeText;
+    border-color: $darkModeText;
+
+    height: 100vh;
+    width: 100vw;
+
+    transition: background-color $transitionTime ease;
+}
+
+.todo_container {
+    display: flex;
+    align-items: center;
+
+    font-size: 20px;
+
+    li {
+        flex-grow: 1;
+        margin-right: 1rem;
+    }
+
+    button {
+        // Put the button on the right
+        margin-left: auto;
+    }
+
+    margin-top: -25px;
+}
+
+
+.todos {
+    border: 2px solid;
+    border-radius: 2%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+
+    width: 40%;
+
+    /* Center the div */
+    margin: auto;
+}
+
+.cross_font {
+    color: red;
+}
+
+
+.center_div {
+    text-align: center;
+}
+
+.form {
+    //Change font size to child elements
+    font-size: 20px;
+    text-align: center;
+}
+
+.submit_button {
+    border: 1px solid;
+    border-radius: 5%;
+}
